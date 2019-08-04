@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>record</title>
+    <script src="./lib/index.js"></script>
+    <script src="./lib/wav.js"></script>
+  </head>
+  <body>
+    <button onclick="onStart()">开始</button>
+    <button onclick="onEnd()">结束</button>
+    <audio class="audio-node" controls></audio>
+    <script>
+      function onStart() {
+        start();
+      }
+      function onEnd() {
+        stop();
+      }
+    </script>
+  </body>
+</html>
